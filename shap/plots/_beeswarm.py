@@ -274,7 +274,7 @@ def beeswarm(shap_values, max_display=10, order=Explanation.abs.mean(0),
     # build our y-tick labels
     yticklabels = [feature_names[i] for i in feature_inds]
     if num_features < len(values[0]):
-        yticklabels[-1] = "Sum of %d other features" % num_cut
+        yticklabels[-1] = "Other"
     
     row_height = 0.4
     if plot_size == "auto":
